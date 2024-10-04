@@ -1,8 +1,9 @@
 const { Sequelize } = require("sequelize");
 
-const sequelize = new Sequelize("toughts2", "root", "", {
-  host: "localhost",
+const sequelize = new Sequelize("railway", "root", "kqFRZiWUIwuoxnBkzINqPcaoquwdLREs", {
+  host: "junction.proxy.rlwy.net",
   dialect: "mysql",
+  port: 47581,
 });
 
 try {

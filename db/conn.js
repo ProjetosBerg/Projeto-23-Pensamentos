@@ -1,6 +1,9 @@
 const { Sequelize } = require("sequelize");
+const dotenv = require("dotenv");
 
-const sequelize = new Sequelize("railway", "root", "kqFRZiWUIwuoxnBkzINqPcaoquwdLREs", {
+dotenv.config();
+
+const sequelize = new Sequelize("railway", `${process.env.DB_USER}`, `${process.env.DB_PASSWORD}`, {
   host: "junction.proxy.rlwy.net",
   dialect: "mysql",
   port: 47581,
